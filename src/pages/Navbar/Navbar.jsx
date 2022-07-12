@@ -1,10 +1,15 @@
 import { Link, Outlet } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../../contexts/context";
+import { signOutUser } from "../../utils/firebase/firebase.utils";
 
 function Navbar() {
-  const { currentUser } = useContext(UserContext);
-  console.log(currentUser);
+  const { currentUser, setCurrentUser } = useContext(UserContext);
+
+  const signOutHandler = async () => {
+    await signOutUser;
+    setCurrentUser(null);
+  };
 
   return (
     <>
@@ -14,9 +19,13 @@ function Navbar() {
         </Link>
         <div class="flex-none">
           <ul class="menu menu-horizontal p-0">
-            <li>
-              <Link to="/auth">Sign In</Link>
-            </li>
+            {currentUser ? (
+              <button onClick={signOutHandler}> Sign Out</button>
+            ) : (
+              <li>
+                <Link to="/auth">Sign In</Link>
+              </li>
+            )}
             <li>
               <Link to="/about-artist">About Artist</Link>
             </li>
