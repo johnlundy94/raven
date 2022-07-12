@@ -1,6 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
+import { useContext } from "react";
+import { UserContext } from "../../contexts/context";
 
 function Navbar() {
+  const { currentUser } = useContext(UserContext);
+  console.log(currentUser);
+
   return (
     <>
       <div class="navbar bg-base-100">
