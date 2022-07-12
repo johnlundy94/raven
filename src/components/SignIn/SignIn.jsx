@@ -37,7 +37,22 @@ function SignIn() {
       );
       console.log(response);
       resetFormFields();
-    } catch (error) {}
+    } catch (error) {
+      switch (error.code) {
+        case "auth/wrong-password":
+          alert("Incorrect password");
+          break;
+        case "auth/user-not-found":
+          alert("No user associated with this email");
+        default:
+          console.log(error);
+          break;
+      }
+      if (error.code === "auth/wrong-password") {
+        alert("Incorrect password");
+      }
+      console.log(error);
+    }
   };
 
   const handleChange = (event) => {
@@ -68,7 +83,10 @@ function SignIn() {
           value={password}
         />
         <button type="submit">Sign In</button>
-        <button onClick={signInWithGoogle}> Google Sign In</button>
+        <button type="button" onClick={signInWithGoogle}>
+          {" "}
+          Google Sign In
+        </button>
       </form>
     </div>
   );
