@@ -27,8 +27,8 @@ function SignIn() {
 
   const signInWithGoogle = async () => {
     const { user } = await signInWithGooglePopup();
+
     createUserDocumentFromAuth(user);
-    await createUserDocumentFromAuth(user);
   };
 
   const handleSubmit = async (event) => {
@@ -39,7 +39,6 @@ function SignIn() {
         email,
         password
       );
-      setCurrentUser(user);
 
       resetFormFields();
     } catch (error) {
