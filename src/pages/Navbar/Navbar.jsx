@@ -4,12 +4,7 @@ import { UserContext } from "../../contexts/context";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 
 function Navbar() {
-  const { currentUser, setCurrentUser } = useContext(UserContext);
-
-  const signOutHandler = async () => {
-    await signOutUser;
-    setCurrentUser(null);
-  };
+  const { currentUser } = useContext(UserContext);
 
   return (
     <>
@@ -20,7 +15,7 @@ function Navbar() {
         <div class="flex-none">
           <ul class="menu menu-horizontal p-0">
             {currentUser ? (
-              <button onClick={signOutHandler}> Sign Out</button>
+              <button onClick={signOutUser}> Sign Out</button>
             ) : (
               <li>
                 <Link to="/auth">Sign In</Link>
