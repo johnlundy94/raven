@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Birthoc",
+    "imageUrl": "../src/assets/paintings/birthoc.jpg",
+    "price": 25
+  },
+  {
+    "id": 2,
+    "name": "Blueprint",
+    "imageUrl": "../src/assets/paintings/blueprint.jpg",
+    "price": 18
+  },
+  {
+    "id": 3,
+    "name": "Breathe",
+    "imageUrl": "../src/assets/paintings/Breathe.jpg",
+    "price": 35
+  },
+  {
+    "id": 4,
+    "name": "Coco",
+    "imageUrl": "../src/assets/paintings/coco.jpg",
+    "price": 25
+  },
+  {
+    "id": 5,
+    "name": "Earl Grey",
+    "imageUrl": "../src/assets/paintings/EarlGrey.jpg",
+    "price": 18
+  },
+  {
+    "id": 6,
+    "name": "Endofanera",
+    "imageUrl": "../src/assets/paintings/endofanera.jpg",
+    "price": 14
+  },
+  {
+    "id": 7,
+    "name": "Green",
+    "imageUrl": "../src/assets/paintings/Green.jpg",
+    "price": 18
+  },
+  {
+    "id": 8,
+    "name": "Hat",
+    "imageUrl": "../src/assets/paintings/hat.jpg",
+    "price": 14
+  },
+  {
+    "id": 9,
+    "name": "Hot",
+    "imageUrl": "../src/assets/paintings/hot3.jpg",
+    "price": 16
+  },
+  {
+    "id": 10,
+    "name": "Lightning",
+    "imageUrl": "../src/assets/paintings/lightning.jpg",
+    "price": 16
+  },
+  {
+    "id": 9,
+    "name": "Lungs",
+    "imageUrl": "../src/assets/paintings/lungs.jpg",
+    "price": 16
+  },
+  {
+    "id": 9,
+    "name": "Matt's Clouds",
+    "imageUrl": "../src/assets/paintings/MattsClouds.jpg",
+    "price": 16
+  },
+  {
+    "id": 9,
+    "name": "Meet The Artist",
+    "imageUrl": "../src/assets/paintings/MeetTheArtistCloud2.jpg",
+    "price": 16
+  },
+  {
+    "id": 9,
+    "name": "Reel Girl",
+    "imageUrl": "../src/assets/paintings/reelgirl.jpg",
+    "price": 16
+  },
+  {
+    "id": 9,
+    "name": "Untouchable",
+    "imageUrl": "../src/assets/paintings/UntouchableFinished.jpg",
+    "price": 16
+  }
+]
